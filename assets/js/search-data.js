@@ -384,16 +384,20 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-joined-knight-lab-as-a-research-intern",
+          title: 'Joined Knight Lab as a research intern',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-joined-cses-innovate-as-a-ml-researcher",
+          title: 'Joined CSES Innovate as a ML researcher',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-joined-q-lab-to-work-on-simworld",
+          title: 'Joined Q-Lab to work on SimWorld',
+          description: "",
+          section: "News",},{id: "news-became-cses-innovate-vp-operations",
+          title: 'Became CSES Innovate VP Operations',
+          description: "",
+          section: "News",},{id: "news-appointed-cses-innovate-president",
+          title: 'Appointed CSES Innovate President',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
