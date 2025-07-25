@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-06-10
+date: 2025-05-01
 inline: true
 related_posts: false
 ---
 
-Appointed CSES Innovate President
+Became CSES Innovate VP Operations

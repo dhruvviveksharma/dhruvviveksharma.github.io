@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-06-10
+date: 2024-10-01
 inline: true
 related_posts: false
 ---
 
-Appointed CSES Innovate President
+Joined Knight Lab as a research intern
