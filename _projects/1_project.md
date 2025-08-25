@@ -1,81 +1,89 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: AI Secretary
+description: An AI-powered productivity assistant
+img: assets/img/9.jpg
 importance: 1
 category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+# AI Secretary 📱🤖  
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**AI Secretary** is an **AI-powered productivity assistant** that combines note-taking, task management, and scheduling into one seamless app.  
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+I built this project as a personal experiment to improve **student productivity**. The goal was to create a tool where notes, tasks, and events don’t live in silos, but instead interact naturally through an **AI chat assistant**. By integrating **Google Calendar**, **Todoist**, and the **OpenAI API**, AI Secretary allows users to manage their academic and personal lives with ease.  
+
+---
+
+## ✨ Features  
+
+- **📝 Notes** – Simple local notes app with chat history saved on device.  
+- **📅 Google Calendar** – View upcoming events; event creation + NLP scheduling in progress.  
+- **💬 AI Chat** – Conversational interface with OpenAI API; manage tasks via chat synced with Todoist; planned support for **Google Gemini API**.  
+- **✅ Todoist Integration** – Two-way sync with Google account tasks for a unified view of notes, calendar, and tasks.  
+
+---
+
+## 🛠️ Tech Stack  
+
+- **Flutter** – cross-platform mobile framework  
+- **Firebase** – authentication + backend services  
+- **Google Auth & Calendar API** – event management  
+- **Todoist API** – task synchronization  
+- **OpenAI API** – conversational AI for task and note handling  
+- **HTTP** – API communication  
+
+---
+
+## 🚀 Why It Matters  
+
+Students juggle notes, deadlines, and events across multiple disconnected tools. **AI Secretary** aims to unify them while adding **AI-driven productivity**:  
+
+- No need to manually update calendars and task lists.  
+- Natural language input like *“Remind me to review math notes tomorrow at 7 PM”* turns into a scheduled calendar event or task automatically.  
+- Notes, tasks, and events live together in one ecosystem.  
+
+---
+
+## 📸 Screenshots  
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid path="ReadmeImages/notes_page.png" title="Notes Page" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid path="ReadmeImages/chat_page.png" title="Chat Page" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm mt-3 mt-md-0">
+    {% include figure.liquid path="ReadmeImages/calendar_page.png" title="Calendar Page" class="img-fluid rounded z-depth-1" %}
+  </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+  Notes page (left), AI-powered Chat (middle), and Google Calendar integration (right).
 </div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="ReadmeImages/tasks_page.png" title="Tasks Page (Todoist)" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-```
+<div class="caption">
+  Todoist tasks synced seamlessly with Google account.
+</div>
 
-{% endraw %}
+---
+
+## 🔮 Roadmap  
+
+- [ ] Enable event creation in Google Calendar  
+- [ ] Expand NLP support for natural event/task creation  
+- [ ] Generalize the app for all Google + Todoist users  
+- [ ] Explore **Google Gemini API** integration for multimodal AI  
+- [ ] Package and release as an installable app  
+
+---
+
+## 📂 Repository  
+
+📌 View the source code here: [AISecretary on GitHub](https://github.com/dhruvviveksharma/AISecretary)  

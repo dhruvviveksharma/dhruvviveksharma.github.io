@@ -177,7 +177,7 @@ exclude:
   - _pages/dropdown.md  
   - _pages/profiles.md
   - _pages/repositories.md
-  - _pages/projects.md
+  # - _pages/projects.md
   - _pages/publications.md
   - bin/
   - CONTRIBUTING.md

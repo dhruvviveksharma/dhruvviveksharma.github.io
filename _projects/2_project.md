@@ -1,81 +1,86 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Hogwarts Lexicon
+description: An AI-powered Harry Potter Question Answering System
+img: assets/img/HogwartsLexicon.png
 importance: 2
 category: work
 giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+# Hogwarts Lexicon – A Question Answering System Based on the Harry Potter Series
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**Hogwarts Lexicon** is an AI-powered question-answering platform that immerses fans in the Wizarding World of Harry Potter. Users can simply ask questions about the Harry Potter universe and receive detailed, context-rich answers, all powered by modern AI technology.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+---
+
+## ✨ Features
+
+- **Fast & Context-Aware Search** – The FAISS vector store enables quick retrieval of relevant passages.  
+- **Natural Language Understanding** – Uses OpenAI’s GPT models in a retrieval-augmented generation (RAG) pipeline for coherent, lore-accurate responses.  
+- **Themed Interface** – A responsive and immersive UI styled around Hogwarts aesthetics.  
+
+---
+
+## 🛠️ Tech Stack  
+
+- **Backend**: Node.js + Express, LangChain, FAISS, OpenAI GPT  
+- **Frontend**: React, Vite, custom CSS  
+- **Database**: Vector store for efficient passage retrieval  
+
+---
+
+## 📸 Screenshots  
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/hlexicon-1.png" title="Homepage" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/hlexicon-2.png" title="Chat Page" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/hlexicon-3.png" title="Answer Example" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Left: Homepage for Hogwarts Lexicon. Middle: Input a question in natural language. Right: AI-generated detailed lore-based answer.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+---
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## 🚀 Setup & Installation  
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+1. Clone the repo:  
+   ```bash
+   git clone https://github.com/dhruvviveksharma/Hogwarts-Lexicon.git
+   cd Hogwarts-Lexicon 
+   ```
 
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
+2. Install dependencies
+```bash
+cd server && npm install
+cd ../client && npm install
 ```
 
-{% endraw %}
+3. Configure dotenv in the server directory
+```bash
+OPENAI_API_KEY=your_api_key_here
+```
+
+4. Build FAISS vectorstore
+```bash
+cd server
+node build_db.js
+```
+
+5. Run the backend:
+```bash
+node index.js
+```
+
+6. Start the frontend
+```bash
+cd ../client
+npm run dev
+```
