@@ -9,9 +9,16 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-cv",
+  },{id: "nav-projects",
+          title: "projects",
+          description: "A growing collection of your cool projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-cv",
           title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "This is my CV!",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -399,14 +406,14 @@ ninja.data = [{
           section: "News",},{id: "news-appointed-cses-innovate-president",
           title: 'Appointed CSES Innovate President',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-ai-secretary",
+          title: 'AI Secretary',
+          description: "An AI-powered productivity assistant",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-hogwarts-lexicon",
+          title: 'Hogwarts Lexicon',
+          description: "An AI-powered Harry Potter Question Answering System",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
