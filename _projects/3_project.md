@@ -1,68 +1,52 @@
-# Skin Lesion Classification with Custom CNN
+---
+layout: page
+title: Skin Lesion Detector
+description: A multi-architecture skin lesion classification pipeline with GPU training infrastructure
+img: assets/img/sld-confusion-matrix.png
+importance: 4
+category: work
+---
+
+**Skin Lesion Detector** is a medical AI initiative I've been leading as part of **CSES Innovate** at UC San Diego — a 9-member team building an end-to-end pipeline for classifying dermoscopic images of skin lesions, from dataset preprocessing through model training to deployment infrastructure.
+
+---
 
 ## 🔹 Motivation
-- Skin cancer is one of the most common cancers worldwide, and early detection through lesion classification can significantly improve patient outcomes.  
-- Inspired by [this paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC11295341/), I implemented a **from-scratch CNN pipeline** for multi-class skin lesion classification.  
-- The focus is on **building the dataset pipeline and model training loop from scratch in PyTorch**, instead of relying on pre-trained networks like ResNet.  
+
+Skin cancer is one of the most common cancers worldwide, and early detection through lesion classification can meaningfully improve patient outcomes. The project started from [this paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC11295341/) on from-scratch CNN pipelines for multi-class skin lesion classification on the **HAM10000** dataset, and has since evolved into a broader comparison of architectures with real training infrastructure behind it.
 
 ---
 
-## 🔹 Dataset Preparation
-- Collected **skin lesion images** organized by lesion type (`bkl`, `mel`, `df`, etc.).  
-- **Preprocessing pipeline**:
-  - Resized all images to **256 × 256** with OpenCV.  
-  - Computed **per-channel mean and standard deviation** of the dataset.  
-  - Normalized images **on-the-fly** using PyTorch transforms.  
-- **Balanced Dataset Creation**:
-  - Ensured each lesion class has **at least 6000 images**.  
-  - For underrepresented classes, applied **on-the-fly augmentation** (rotation, flips, brightness shifts, random crops, etc.).  
-  - Stratified split into **train (60%) / val (20%) / test (20%)**, maintaining class balance.  
-  - Ensured **test set is never augmented**, preserving original images.  
-- Added **progress tracking** with `tqdm` to monitor dataset balancing and splitting.  
+## 🔹 Dataset Pipeline
+
+- Images organized by lesion type (`bkl`, `mel`, `df`, etc.), resized to 256×256 and normalized with dataset-specific per-channel mean/std computed via OpenCV.
+- Balanced each class to a minimum sample count via on-the-fly augmentation (rotation, flips, brightness jitter, random crops) rather than storing augmented copies to disk — new augmented samples are generated per epoch, keeping storage flat while increasing training diversity.
+- Stratified 60/20/20 train/val/test split, with the test set kept unaugmented throughout.
 
 ---
 
-## 🔹 Data Augmentation
-- Implemented augmentation in **PyTorch `transforms`**:  
-  - Random rotations, flips, resized crops, brightness jitter.  
-  - Normalization with dataset-specific mean & std.  
-- Training pipeline ensures **new augmented samples are generated per epoch**, instead of permanently storing augmented images (saves storage and improves diversity).  
+## 🔹 Model Architectures
+
+The project evolved through several architectures rather than settling on the original from-scratch CNN plan:
+
+- **Custom CNN** — the original from-scratch PyTorch CNN (4 conv blocks + FC layers) matching the reference paper's configuration.
+- **Transfer learning** — EfficientNet-B0 and ResNet18, selectable at training time, trained with label smoothing and mixed-precision.
+- **YOLOv8s classification** — the most recent and furthest-trained approach, fine-tuned on the HAM10000 7-class task.
+
+**Results (YOLOv8s, 50 epochs):** 81.75% top-1 accuracy and 99.84% top-5 accuracy on the held-out test set, with per-class classification reports and a confusion matrix (above) generated for error analysis.
 
 ---
 
-## 🔹 Model Architecture
-- Built a **custom CNN in PyTorch** that matches the paper’s exact layer configuration:  
-  - **4 Convolutional blocks** with `Conv2D + MaxPool + ReLU`.  
-  - **Flatten → Fully Connected Layers (512 → 64 → 32 → 7)**.  
-  - Dropout (0.5) for regularization.  
-- Parameter counts were carefully matched to the paper’s specifications.  
-- Final output: **7 classes** (skin lesion categories).  
+## 🔹 Training Infrastructure
 
----
-
-## 🔹 Git & Workflow Management
-- Used `.gitignore` to exclude **all image files and `venv/`** from Git commits.  
-- Resolved issue of accidentally committing a **676 MB `core` file** that exceeded GitHub’s 100 MB limit.  
-- Plan to clean up history (using **BFG Repo Cleaner**) to fully remove large files from Git.  
+- **Docker**: CUDA 12.1 image with PyTorch and Ultralytics for GPU training.
+- **Kubernetes**: batch training jobs on A100 GPU nodes, with persistent volumes for dataset and checkpoint storage, plus interactive pods for debugging.
+- Multi-GPU `DataParallel` support, a memory-efficient `--test-only` evaluation mode, and early stopping with learning-rate scheduling.
 
 ---
 
 ## 🔹 Next Steps
-1. **Training & Evaluation**
-   - Train the CNN on the balanced dataset.  
-   - Monitor training with metrics like accuracy, F1-score, confusion matrix.  
-   - Compare performance with baseline models (e.g., ResNet, MobileNet).  
 
-2. **Optimization**
-   - Experiment with learning rate schedules and optimizers.  
-   - Apply **early stopping** and **checkpoint saving** for best model selection.  
-
-3. **Deployment**
-   - Save trained model as `.pth`.  
-   - Build a **Flask/Streamlit demo app** where users can upload an image and get predicted lesion class.  
-
-4. **Portfolio Presentation**
-   - Visualize dataset distribution before/after augmentation.  
-   - Show training curves (loss/accuracy).  
-   - Include architecture diagram and key code snippets.  
-   - Link to GitHub repo with clean README.  
+- Push accuracy further via targeted augmentation and class-balancing on the lesion types the confusion matrix shows are hardest to separate.
+- Wire up a lightweight inference API so the existing Flutter/Firebase mobile UI can call the trained model directly.
+- Continue benchmarking YOLOv8 against the transfer-learning baselines to settle on a final production model.

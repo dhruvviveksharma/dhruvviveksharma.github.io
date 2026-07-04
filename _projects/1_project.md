@@ -3,12 +3,10 @@ layout: page
 title: AI Secretary
 description: An AI-powered productivity assistant
 img: assets/img/9.jpg
-importance: 1
+importance: 6
 category: work
 related_publications: true
 ---
-
-# AI Secretary 📱🤖  
 
 **AI Secretary** is an **AI-powered productivity assistant** that combines note-taking, task management, and scheduling into one seamless app.  
 

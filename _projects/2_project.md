@@ -3,12 +3,10 @@ layout: page
 title: Hogwarts Lexicon
 description: An AI-powered Harry Potter Question Answering System
 img: assets/img/HogwartsLexicon.png
-importance: 2
+importance: 5
 category: work
 giscus_comments: true
 ---
-
-# Hogwarts Lexicon – A Question Answering System Based on the Harry Potter Series
 
 **Hogwarts Lexicon** is an AI-powered question-answering platform that immerses fans in the Wizarding World of Harry Potter. Users can simply ask questions about the Harry Potter universe and receive detailed, context-rich answers, all powered by modern AI technology.
 

@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi there! I'm Dhruv Sharma, a rising Junior at UC San Diego studying Computer Engineering. I am actively involved in research on campus and in student clubs as the President of the Computer Science and Engineering Society's (CSES) Innovate community, a research focused organization aimed to reduce the barriers to entry into AI and deep learning research. 
+Hi there! I'm Dhruv Sharma, a senior at UC San Diego studying Computer Engineering, and an incoming M.S. student in Machine Learning and Data Science at UCSD starting January 2027. I am actively involved in research on campus and in student clubs as the President of the Computer Science and Engineering Society's (CSES) Innovate community, a research focused organization aimed to reduce the barriers to entry into AI and deep learning research. 
 
 My work focuses on the intersection of Machine Learning, Deep Learning, and Data Science, with a keen interest in Generative AI, Predictive Modeling, and Algorithmic Systems. I've developed high-fidelity character animations in Unreal Engine 5.3 , integrated chain-of-thought methodologies to train context-aware autonomous agents, and optimized training pipelines using Docker and Kubernetes.
 
