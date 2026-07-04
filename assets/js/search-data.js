@@ -412,6 +412,15 @@ ninja.data = [{
           section: "News",},{id: "news-jacques-chirazi-named-cses-advisor",
           title: 'Jacques Chirazi named CSES advisor.',
           description: "",
+          section: "News",},{id: "news-joined-weinvest-as-a-software-engineer-intern",
+          title: 'Joined WeInvest as a Software Engineer Intern',
+          description: "",
+          section: "News",},{id: "news-joined-primare-as-an-infrastructure-engineer-intern",
+          title: 'Joined Primare as an Infrastructure Engineer Intern',
+          description: "",
+          section: "News",},{id: "news-admitted-to-the-m-s-in-machine-learning-and-data-science-program-at-ucsd-starting-jan-2027",
+          title: 'Admitted to the M.S. in Machine Learning and Data Science program at UCSD,...',
+          description: "",
           section: "News",},{id: "projects-ai-secretary",
           title: 'AI Secretary',
           description: "An AI-powered productivity assistant",
@@ -422,6 +431,26 @@ ninja.data = [{
           description: "An AI-powered Harry Potter Question Answering System",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
+            },},{id: "projects-skin-lesion-detector",
+          title: 'Skin Lesion Detector',
+          description: "A multi-architecture skin lesion classification pipeline with GPU training infrastructure",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_project/";
+            },},{id: "projects-qiitaexplore",
+          title: 'QiitaExplore',
+          description: "An agentic research console for microbiome study discovery",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_project/";
+            },},{id: "projects-weinvest-autonomous-research-amp-amp-portfolio-optimization",
+          title: 'WeInvest — Autonomous Research &amp;amp;amp; Portfolio Optimization',
+          description: "A self-directing research pipeline and signal-driven portfolio optimizer for quantitative trading",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_project/";
+            },},{id: "projects-primare-on-prem-ai-infrastructure",
+          title: 'Primare — On-Prem AI Infrastructure',
+          description: "Infrastructure-as-code and observability for deploying on-premise LLM inference clusters",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_project/";
             },},{
         id: 'social-email',
         title: 'email',
