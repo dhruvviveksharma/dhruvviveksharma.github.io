@@ -355,17 +355,18 @@ p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: clamp(1rem, 2vw, 1.75rem);
+  gap: clamp(1.5rem, 4vw, 3rem);
 }
 
 .hero-avatar {
-  width: clamp(140px, 22vw, 320px);
+  width: clamp(170px, 28vw, 420px);
   max-width: 100%;
   height: auto;
   aspect-ratio: 4 / 3;
   border-radius: var(--radius-sm);
   object-fit: cover;
   flex-shrink: 0;
+  margin-left: clamp(0.25rem, 2vw, 1.5rem);
   border: 3px solid var(--card-bg);
   box-shadow: var(--shadow);
 }
