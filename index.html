@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dhruv Sharma</title>
+    <meta
+      name="description"
+      content="Dhruv Sharma — Computer Engineering student at UC San Diego building systems at the intersection of machine learning, agentic AI, and full-stack engineering."
+    />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9A%9B%EF%B8%8F</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=10" />
+  </head>
+  <body>
+    <nav class="site-nav">
+      <div class="container">
+        <a class="brand" href="index.html"><span class="brand-dot"></span>Dhruv Sharma</a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <ul class="nav-links" data-nav-links>
+          <li><a href="index.html" aria-current="page">About</a></li>
+          <li><a href="projects/index.html">Projects</a></li>
+          <li><a href="cv/index.html">CV</a></li>
+          <li><button class="theme-toggle" data-theme-toggle></button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <canvas id="wave-canvas" class="hero-wave" aria-hidden="true"></canvas>
+      <div class="hero-text container">
+        <p class="eyebrow"><span class="dot"></span>B.S. Computer Engineering · UC San Diego · Dec 2026</p>
+        <p class="eyebrow eyebrow-secondary"><span class="dot"></span>M.S. Machine Learning and Data Science · Dec 2027</p>
+        <div class="hero-name-row">
+          <h1 class="hero-title">Dhruv <span class="accent-word">Sharma</span></h1>
+          <img src="assets/img/dhruv-avatar.png" alt="Dhruv Sharma" class="hero-avatar" />
+        </div>
+        <p class="hero-tagline">
+          I build the systems that make AI agents reliable in production — from MCP gateways serving real enterprise tools, to autonomous
+          research pipelines that run tens of thousands of backtests unattended.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="projects/index.html">View Projects</a>
+          <a class="btn btn-outline" href="cv/index.html">View CV</a>
+          <a class="btn btn-outline" href="mailto:dhruvviveksharma@gmail.com">Email Me</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Python</span><span>PyTorch</span><span>LLM Orchestration</span><span>React</span><span>CUDA</span><span>Kubernetes</span
+        ><span>MCP</span><span>FastAPI</span><span>Agentic AI</span><span>PostgreSQL</span><span>Claude Code</span><span>Docker</span>
+        <span>Python</span><span>PyTorch</span><span>LLM Orchestration</span><span>React</span><span>CUDA</span><span>Kubernetes</span
+        ><span>MCP</span><span>FastAPI</span><span>Agentic AI</span><span>PostgreSQL</span><span>Claude Code</span><span>Docker</span>
+      </div>
+    </div>
+
+    <section id="about" class="container">
+      <div class="section-head">
+        <p class="eyebrow"><span class="dot"></span>01 · About</p>
+        <h2>Who I am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="assets/img/prof_pic1.jpg" alt="Dhruv Sharma" loading="eager" />
+          <p class="caption">San Diego, CA</p>
+        </div>
+        <div class="about-copy">
+          <p>
+            I'm pursuing a combined degree at UC San Diego — a B.S. in Computer Engineering (Dec 2026) and an M.S. in Machine Learning and Data
+            Science (Dec 2027). My work spans building production MCP gateways and agent-evaluation frameworks at
+            <strong>Primare</strong>, architecting autonomous research pipelines running 44,000+ backtests at <strong>WeInvest</strong>, and
+            researching multi-agent simulation at <strong>Q-Lab</strong> — published as a <strong>NeurIPS 2025 Spotlight</strong>.
+          </p>
+          <p>
+            Outside of the lab, I lead <a href="https://cses.ucsd.edu/" target="_blank" rel="noopener">CSES Innovate</a>, a 40+ member student
+            research organization focused on lowering the barriers to entry into AI research. When I'm not building, you'll find me playing
+            chess, running, or on the squash court.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section-soft">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow"><span class="dot"></span>02 · Selected Work</p>
+          <h2>A few things I've built</h2>
+        </div>
+        <div class="card-grid">
+          <a class="card" href="projects/index.html#simworld">
+            <div class="card-img"><img src="assets/img/simworld.webp" alt="" loading="lazy" /></div>
+            <div class="card-body">
+              <h3 class="card-title">SimWorld</h3>
+              <p class="card-desc">An open-ended simulator for agents in physical and social worlds — NeurIPS 2025 Spotlight.</p>
+            </div>
+          </a>
+          <a class="card" href="projects/index.html#primare">
+            <div class="card-img" style="background: #0f2445"><img src="assets/img/primare-logo.png" alt="Primare" loading="lazy" class="logo-fit" /></div>
+            <div class="card-body">
+              <h3 class="card-title">Primare</h3>
+              <p class="card-desc">Primare OS — an MCP gateway integrating 6 custom and enterprise MCP servers in production.</p>
+            </div>
+          </a>
+          <a class="card" href="projects/index.html#hogwarts-lexicon">
+            <div class="card-img"><img src="assets/img/HogwartsLexicon.png" alt="" loading="lazy" /></div>
+            <div class="card-body">
+              <h3 class="card-title">Hogwarts Lexicon</h3>
+              <p class="card-desc">A full-stack RAG question-answering platform for the Harry Potter universe.</p>
+            </div>
+          </a>
+          <a class="card" href="projects/index.html#qiitaexplore">
+            <div class="card-img" style="background: #ffffff"><img src="assets/img/qiitaexplore-logo.png" alt="QiitaExplore" loading="lazy" class="logo-fit" /></div>
+            <div class="card-body">
+              <h3 class="card-title">QiitaExplore</h3>
+              <p class="card-desc">An agentic research console for microbiome study discovery, used by 15+ researchers across 600+ studies.</p>
+            </div>
+          </a>
+        </div>
+        <a class="see-all" href="projects/index.html">See all projects →</a>
+      </div>
+    </section>
+
+    <section id="news" class="container">
+      <div class="section-head">
+        <p class="eyebrow"><span class="dot"></span>03 · News</p>
+        <h2>Recent updates</h2>
+      </div>
+      <div class="news-list">
+        <div class="news-row">
+          <time datetime="2026-10-01">Oct 01, 2026</time>
+          <p>Promoted to CTO of Primare.</p>
+        </div>
+        <div class="news-row">
+          <time datetime="2026-08-04">Aug 04, 2026</time>
+          <p>Became a Graduate Student Researcher at Knight Lab.</p>
+        </div>
+        <div class="news-row">
+          <time datetime="2026-07-04">Jul 04, 2026</time>
+          <p>Admitted to the M.S. in Machine Learning and Data Science program at UCSD, starting Aug 2026.</p>
+        </div>
+        <div class="news-row">
+          <time datetime="2026-07-01">Jul 01, 2026</time>
+          <p>Joined Primare as a Software Engineering Intern.</p>
+        </div>
+        <div class="news-row">
+          <time datetime="2026-02-01">Feb 01, 2026</time>
+          <p>Joined WeInvest as a Software Engineering Intern.</p>
+        </div>
+        <div class="news-row">
+          <time datetime="2025-09-19">Sep 19, 2025</time>
+          <p>SimWorld accepted into NeurIPS 2025 as a Spotlight Presentation!</p>
+        </div>
+        <div class="news-row">
+          <time datetime="2025-09-19">Sep 19, 2025</time>
+          <p>Jacques Chirazi named CSES Innovate advisor.</p>
+        </div>
+        <div class="news-row">
+          <time datetime="2025-06-10">Jun 10, 2025</time>
+          <p>Appointed CSES Innovate President.</p>
+        </div>
+        <div class="news-row">
+          <time datetime="2025-05-01">May 01, 2025</time>
+          <p>Became CSES Innovate VP of Operations.</p>
+        </div>
+        <div class="news-row">
+          <time datetime="2025-02-01">Feb 01, 2025</time>
+          <p>Joined Q-Lab to work on SimWorld.</p>
+        </div>
+        <div class="news-row">
+          <time datetime="2024-11-01">Nov 01, 2024</time>
+          <p>Joined CSES Innovate as an ML researcher.</p>
+        </div>
+        <div class="news-row">
+          <time datetime="2024-10-01">Oct 01, 2024</time>
+          <p>Joined Knight Lab as an AI/ML Engineering Intern.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <div class="section-head">
+        <p class="eyebrow"><span class="dot"></span>04 · Contact</p>
+        <h2>Let's talk</h2>
+      </div>
+      <p style="color: var(--ink-2); max-width: 50ch">Email is the best way to reach me.</p>
+      <div class="contact-icons">
+        <a href="mailto:dhruvviveksharma@gmail.com" title="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm1.8 2L12 12.5 19.2 7H4.8zM20 8.3l-7.4 5.4a1 1 0 01-1.2 0L4 8.3V18h16V8.3z"/></svg>
+        </a>
+        <a href="https://github.com/dhruvviveksharma" target="_blank" rel="noopener" title="GitHub">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/dhruv-sharma-736668223/" target="_blank" rel="noopener" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 110-4.13 2.07 2.07 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>© 2026 Dhruv Sharma</span>
+        <span><a href="cv/index.html">CV</a> · <a href="projects/index.html">Projects</a> · <a href="mailto:dhruvviveksharma@gmail.com">Email</a></span>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js?v=10"></script>
+  </body>
+</html>

@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects — Dhruv Sharma</title>
+    <meta name="description" content="Research, products, and experiments spanning agentic AI, autonomous research pipelines, and full-stack systems." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9A%9B%EF%B8%8F</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/styles.css?v=10" />
+  </head>
+  <body>
+    <nav class="site-nav">
+      <div class="container">
+        <a class="brand" href="../index.html"><span class="brand-dot"></span>Dhruv Sharma</a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <ul class="nav-links" data-nav-links>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="index.html" aria-current="page">Projects</a></li>
+          <li><a href="../cv/index.html">CV</a></li>
+          <li><button class="theme-toggle" data-theme-toggle></button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="page-header container">
+      <p class="eyebrow"><span class="dot"></span>Projects</p>
+      <h1>From Research to Production.</h1>
+      <p>
+        A selection of research projects, internships, and independent builds — spanning agentic AI, autonomous research pipelines, and
+        full-stack applications. Click a project to read more.
+      </p>
+    </header>
+
+    <section class="container" style="padding-top: 0">
+      <div id="qiitaexplore" class="project">
+        <button class="project-head" data-project-toggle>
+          <div class="thumb" style="background: #ffffff"><img src="../assets/img/qiitaexplore-logo.png" alt="QiitaExplore" loading="lazy" class="logo-fit" /></div>
+          <div class="project-info">
+            <h3>QiitaExplore</h3>
+            <p>An agentic research console for microbiome study discovery, used by 15+ researchers across 600+ studies.</p>
+            <div class="project-tags"><span class="tag">Flask</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">SSE</span></div>
+          </div>
+          <div class="project-chevron">+</div>
+        </button>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <p>
+              QiitaExplore is a research console that sits in front of Qiita's database of thousands of public microbiome studies. Built during
+              my time as a researcher at Knight Lab, UC San Diego, it replaces manual, one-study-at-a-time browsing with natural-language search,
+              an agentic chat assistant, and a workspace for curating and merging study data.
+            </p>
+            <h4>Highlights</h4>
+            <ul>
+              <li>Shipped an open source full-stack web app delivering NLP search, metadata exploration, and collaborative workflows — now used by 15+ researchers across 600+ studies.</li>
+              <li>Cut study discovery time from 15 minutes to 3 minutes by writing multi-table SQL joins and granular sample-metadata queries, optimizing PostgreSQL queries, lazy-loading large tables, and caching repeated lookups.</li>
+              <li>Designed a reusable, model-agnostic agent orchestration framework connecting 7 LLM backends with 4 research tools via JSON-schema tool arguments, with automatic fallback mechanisms for reliable multi-step execution.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="simworld" class="project">
+        <button class="project-head" data-project-toggle>
+          <div class="thumb"><img src="../assets/img/simworld.webp" alt="" loading="lazy" /></div>
+          <div class="project-info">
+            <h3>SimWorld</h3>
+            <p>An open-ended simulator for agents in physical and social worlds — NeurIPS 2025 Spotlight.</p>
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">Unreal Engine 5</span><span class="tag">VLMs / LLMs</span><span class="tag">Reinforcement Learning</span></div>
+          </div>
+          <div class="project-chevron">+</div>
+        </button>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <p>
+              SimWorld is a large-scale simulation framework for training embodied agents in physically and socially realistic environments,
+              built during my time as an AI Research Intern at Q-Lab, UC San Diego. The work was accepted as a
+              <strong>Spotlight Presentation at NeurIPS 2025</strong>.
+            </p>
+            <h4>Highlights</h4>
+            <ul>
+              <li>Built a scalable multi-agent simulation system supporting 100+ concurrent interactions by integrating neural networks with Unreal Engine 3D visualization environments, and designing software components for distributed and parallel simulation workloads.</li>
+              <li>Automated large-scale environment generation by integrating UnrealCV with Shap-E to generate 3D assets and environments, developing 200+ validated social-interaction animations and reducing manual setup.</li>
+              <li>Trained context-aware autonomous agents by combining reinforcement learning with chain-of-thought reasoning, improving their ability to interpret natural language prompts and respond to environmental cues.</li>
+            </ul>
+            <div class="project-links"><a href="https://simworld.org/" target="_blank" rel="noopener">simworld.org →</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="primare" class="project">
+        <button class="project-head" data-project-toggle>
+          <div class="thumb" style="background: #0f2445"><img src="../assets/img/primare-logo.png" alt="Primare" loading="lazy" class="logo-fit" /></div>
+          <div class="project-info">
+            <h3>Primare — Primare OS</h3>
+            <p>An MCP gateway integrating 6 custom and enterprise MCP servers, serving real production tool-calls.</p>
+            <div class="project-tags"><span class="tag">MCP</span><span class="tag">NeMo Guardrails</span><span class="tag">Ansible</span><span class="tag">Prometheus</span></div>
+          </div>
+          <div class="project-chevron">+</div>
+        </button>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <p>
+              At Primare, I serve as CTO building <strong>Primare OS</strong>, the company's flagship product — an MCP gateway connecting LLM
+              agents to real enterprise tools, plus the infrastructure that keeps on-premise LLM inference clusters running reliably at customer
+              sites.
+            </p>
+            <h4>Highlights</h4>
+            <ul>
+              <li>Built Primare OS as an MCP gateway integrating 6 custom and enterprise MCP servers, including GoHighLevel CRM and Stripe.</li>
+              <li>Improved LLM tool-call success rate from 76% to 91% across 10+ production tools by refining API contracts, input schemas, validation logic, and error handling from execution traces, with NVIDIA NeMo Guardrails.</li>
+              <li>Increased agent task completion by 20% by building an evaluation framework for multi-step agentic workflows, upheld by peer code review, agile sprints, a CI suite across 4 repositories, and Ansible infrastructure-as-code deployments monitored by Prometheus.</li>
+              <li>Reduced chat latency through caching and LLM prefill optimizations, cutting permission checks from 14 parallel calls to 1 per page load using single-flight locking and stale-while-revalidate caching.</li>
+            </ul>
+            <div class="project-links"><a href="https://primare.ai/" target="_blank" rel="noopener">primare.ai →</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="weinvest" class="project">
+        <button class="project-head" data-project-toggle>
+          <div class="thumb" style="background: #31365f"><img src="../assets/img/weinvest-logo.png" alt="WeInvest" loading="lazy" class="logo-fit" /></div>
+          <div class="project-info">
+            <h3>WeInvest — Autonomous Research &amp; Portfolio Optimization</h3>
+            <p>A self-directing research pipeline running 44,000+ backtests across 78 signal-asset combinations.</p>
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">CVXPY</span><span class="tag">KDTree</span><span class="tag">Black-Litterman</span></div>
+          </div>
+          <div class="project-chevron">+</div>
+        </button>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <p>
+              At WeInvest, I worked as a Software Engineering Intern building the systems behind a quantitative trading research platform —
+              replacing manual backtesting and manual portfolio-construction inputs with autonomous, self-directing pipelines.
+            </p>
+            <h4>Highlights</h4>
+            <ul>
+              <li>Built a Python financial research platform orchestrating 44,000+ backtests across 78 signal-asset combinations through a nightly ETL pipeline scheduled with cron.</li>
+              <li>Reduced model discovery time from 3 days to 6 hours by engineering an 8-phase statistical validation pipeline with hypothesis testing and adaptive sampling, enforced through automated integration tests.</li>
+              <li>Built an LLM-driven autoresearch loop that generates search boundaries to maximize the Sharpe ratio across automated backtest experiments, with run logs recording the model version for every run.</li>
+              <li>Engineered a KDTree-backed exploration-exploitation sampler combining Latin Hypercube Search with dead-zone enforcement and winner-region local sampling.</li>
+              <li>Refactored a 37,000-line Python trading codebase to eliminate manual analyst inputs to a Black-Litterman / MVO optimizer across an 80–100 ETF universe.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="windowed-pca" class="project">
+        <button class="project-head" data-project-toggle>
+          <div class="thumb empty" data-initial="W"></div>
+          <div class="project-info">
+            <h3>Windowed Principal Coordinate Analysis</h3>
+            <p>A streaming, out-of-core dimensionality-reduction algorithm for biological datasets. Manuscript in preparation.</p>
+            <div class="project-tags"><span class="tag">C++</span><span class="tag">CUDA</span><span class="tag">mmap</span><span class="tag">Multi-GPU</span></div>
+          </div>
+          <div class="project-chevron">+</div>
+        </button>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <p>
+              First-author research at Knight Lab, UC San Diego, on a dimensionality-reduction algorithm for large biological datasets. I
+              implemented a streaming, out-of-core version in C++ that moves data between disk and RAM with mmap, including my own multi-GPU
+              implementation, verified by unit tests.
+            </p>
+            <h4>Highlights</h4>
+            <ul>
+              <li>Achieves machine-precision convergence at 6× lower peak RAM than the industry-standard implementation.</li>
+              <li>Multi-GPU implementation verified by a unit-test suite for numerical correctness.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="skin-lesion-detector" class="project">
+        <button class="project-head" data-project-toggle>
+          <div class="thumb"><img src="../assets/img/sld-confusion-matrix.png" alt="" loading="lazy" /></div>
+          <div class="project-info">
+            <h3>Skin Lesion Detector</h3>
+            <p>A from-scratch CNN pipeline for multi-class skin lesion classification.</p>
+            <div class="project-tags"><span class="tag">PyTorch</span><span class="tag">OpenCV</span><span class="tag">HAM10000</span></div>
+          </div>
+          <div class="project-chevron">+</div>
+        </button>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <p>
+              A medical AI initiative I lead as part of CSES Innovate at UC San Diego — a 9-member team building an end-to-end pipeline for
+              classifying dermoscopic images of skin lesions, from dataset preprocessing through model training to deployment infrastructure.
+              Targeting 92% accuracy with a 35% misclassification reduction over baseline.
+            </p>
+            <h4>Highlights</h4>
+            <ul>
+              <li>Built a custom 4-block CNN in PyTorch (Conv2D → MaxPool → ReLU → FC layers) without pretrained backbones.</li>
+              <li>Engineered a balanced dataset pipeline from HAM10000: per-class augmentation, stratified 60/20/20 split, on-the-fly transforms per epoch.</li>
+              <li>Preparing for mobile deployment via Flutter + Firebase.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="hogwarts-lexicon" class="project">
+        <button class="project-head" data-project-toggle>
+          <div class="thumb"><img src="../assets/img/HogwartsLexicon.png" alt="" loading="lazy" /></div>
+          <div class="project-info">
+            <h3>Hogwarts Lexicon</h3>
+            <p>A full-stack RAG question-answering platform for the Harry Potter universe.</p>
+            <div class="project-tags"><span class="tag">React</span><span class="tag">LangChain</span><span class="tag">FAISS</span><span class="tag">OpenAI</span></div>
+          </div>
+          <div class="project-chevron">+</div>
+        </button>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <p>
+              Hogwarts Lexicon is an AI-powered question-answering platform that immerses fans in the Wizarding World of Harry Potter. Users ask
+              questions about the Harry Potter universe and receive detailed, context-rich answers powered by a retrieval-augmented generation
+              (RAG) pipeline.
+            </p>
+            <h4>Highlights</h4>
+            <ul>
+              <li>Built full-stack with React + Vite (frontend) and Node.js + Express (backend).</li>
+              <li>Integrated LangChain and OpenAI GPT in a RAG pipeline for coherent, lore-accurate responses.</li>
+              <li>Implemented a custom FAISS vector store for fast, efficient semantic passage retrieval.</li>
+            </ul>
+            <div class="project-links"><a href="https://github.com/dhruvviveksharma/Full_Stack_AI" target="_blank" rel="noopener">GitHub →</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="agentspace" class="project">
+        <button class="project-head" data-project-toggle>
+          <div class="thumb empty" data-initial="A"></div>
+          <div class="project-info">
+            <h3>AgentSpace</h3>
+            <p>An AI agent marketplace for deployable personal clones.</p>
+            <div class="project-tags"><span class="tag">LLM Orchestration</span><span class="tag">React</span><span class="tag">Node.js</span></div>
+          </div>
+          <div class="project-chevron">+</div>
+        </button>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <p>AgentSpace is a marketplace concept where users create AI "clones" of themselves, deployable by others as autonomous agents.</p>
+            <h4>Highlights</h4>
+            <ul>
+              <li>Users build a personal agent profile from work samples and a personality assessment (MBTI or OCEAN model).</li>
+              <li>An LLM synthesizes a dynamic system prompt encoding working style, communication patterns, and domain expertise — no manual prompt writing required.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="aide" class="project">
+        <button class="project-head" data-project-toggle>
+          <div class="thumb empty" data-initial="A"></div>
+          <div class="project-info">
+            <h3>AIDE</h3>
+            <p>A voice-driven coding assistant that keeps the developer in control.</p>
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">STT</span><span class="tag">Constrained LLM Generation</span></div>
+          </div>
+          <div class="project-chevron">+</div>
+        </button>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <p>
+              AIDE is a local AI coding assistant that keeps the developer firmly in the driver's seat — designed to help students build
+              intuition for AI-assisted development without ceding architectural control.
+            </p>
+            <h4>Highlights</h4>
+            <ul>
+              <li>Users speak into a microphone; a local speech model transcribes intent in real time.</li>
+              <li>Parses the active codebase for context, then generates short, targeted snippets rather than large completions — preserving the user's role as architect.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="ai-secretary" class="project">
+        <button class="project-head" data-project-toggle>
+          <div class="thumb"><img src="../assets/img/9.jpg" alt="" loading="lazy" /></div>
+          <div class="project-info">
+            <h3>AI Secretary</h3>
+            <p>A cross-platform productivity assistant that unifies notes, tasks, and calendar events.</p>
+            <div class="project-tags"><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">OpenAI</span></div>
+          </div>
+          <div class="project-chevron">+</div>
+        </button>
+        <div class="project-body">
+          <div class="project-body-inner">
+            <p>
+              AI Secretary is an AI-powered productivity assistant that combines note-taking, task management, and scheduling in one app, built
+              as a personal experiment to let notes, tasks, and events interact naturally through an AI chat assistant.
+            </p>
+            <h4>Highlights</h4>
+            <ul>
+              <li>Built with Flutter + Firebase for cross-platform deployment (iOS/Android).</li>
+              <li>Integrated Google Calendar API and Todoist API for two-way sync.</li>
+              <li>Conversational task management via the OpenAI API — natural language like "Remind me at 7 PM" creates a calendar event automatically.</li>
+            </ul>
+            <div class="project-links"><a href="https://github.com/dhruvviveksharma/AISecretary" target="_blank" rel="noopener">GitHub →</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>© 2026 Dhruv Sharma</span>
+        <span><a href="../index.html">About</a> · <a href="../cv/index.html">CV</a> · <a href="mailto:dhruvviveksharma@gmail.com">Email</a></span>
+      </div>
+    </footer>
+
+    <script src="../assets/js/script.js?v=10"></script>
+  </body>
+</html>

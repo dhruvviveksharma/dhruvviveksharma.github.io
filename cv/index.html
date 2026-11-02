@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV — Dhruv Sharma</title>
+    <meta name="description" content="Dhruv Sharma's CV — education, experience, research & publications, and skills." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9A%9B%EF%B8%8F</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/styles.css?v=10" />
+  </head>
+  <body>
+    <nav class="site-nav">
+      <div class="container">
+        <a class="brand" href="../index.html"><span class="brand-dot"></span>Dhruv Sharma</a>
+        <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <ul class="nav-links" data-nav-links>
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../projects/index.html">Projects</a></li>
+          <li><a href="index.html" aria-current="page">CV</a></li>
+          <li><button class="theme-toggle" data-theme-toggle></button></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="container cv-header" style="padding-top: var(--sp-5)">
+      <div>
+        <p class="eyebrow"><span class="dot"></span>CV</p>
+        <h1 style="font-size: clamp(2.2rem, 1.6rem + 3vw, 3.8rem)">Dhruv Sharma</h1>
+        <p style="color: var(--ink-2); max-width: 55ch">
+          San Diego, CA · <a href="mailto:dhruvviveksharma@gmail.com" style="color: var(--accent); text-decoration: none">dhruvviveksharma@gmail.com</a>
+          · <a href="https://www.linkedin.com/in/dhruv-sharma-736668223/" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none">LinkedIn</a>
+          · <a href="https://github.com/dhruvviveksharma" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none">GitHub</a>
+        </p>
+      </div>
+      <a class="btn btn-primary" href="../assets/pdf/Dhruv_Sharma_Resume.pdf" target="_blank" rel="noopener">Download Résumé</a>
+    </header>
+
+    <section class="container" style="padding-top: 0">
+      <div class="section-head">
+        <p class="eyebrow"><span class="dot"></span>Education</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <p class="timeline-date">Aug 2026 – Dec 2027</p>
+          <h3>M.S. Machine Learning and Data Science</h3>
+          <p class="timeline-org">University of California, San Diego</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">Sep 2023 – Dec 2026</p>
+          <h3>B.S. Computer Engineering</h3>
+          <p class="timeline-org">University of California, San Diego · GPA 3.83/4.0</p>
+          <ul>
+            <li>
+              Relevant coursework: Data Structures &amp; Algorithms, Operating Systems, Computer Architecture, Object-Oriented Programming,
+              Probability &amp; Statistics, Linear Algebra, Calculus, Data Science, Deep Learning
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-soft">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow"><span class="dot"></span>Experience</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <p class="timeline-date">Oct 2026 – Present</p>
+            <h3>CTO · Primare</h3>
+            <p class="timeline-org">San Diego, United States</p>
+            <ul>
+              <li>Built Primare OS, the company's flagship product, as an MCP gateway integrating 6 custom and enterprise MCP servers, including GoHighLevel CRM and Stripe.</li>
+              <li>Improved LLM tool-call success rate from 76% to 91% across 10+ production tools by refining API contracts, input schemas, validation logic, and error handling from execution traces, with NVIDIA NeMo Guardrails.</li>
+              <li>Increased agent task completion by 20% by building an evaluation framework for multi-step agentic workflows, while upholding quality through peer code review, agile sprints, a CI suite across 4 repositories, and infrastructure-as-code (Ansible) deployments monitored by Prometheus.</li>
+              <li>Reduced chat latency through caching and LLM prefill optimizations, while cutting permission checks from 14 parallel calls to 1 per page load using single-flight locking and stale-while-revalidate caching.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-date">Aug 2026 – Present</p>
+            <h3>Graduate Student Researcher · Knight Lab</h3>
+            <p class="timeline-org">San Diego, United States</p>
+            <ul>
+              <li>Designed a reusable, model-agnostic agent orchestration framework connecting 7 LLM backends with 4 research tools via JSON-schema tool arguments and implementing automatic fallback mechanisms for reliable multi-step execution.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-date">Jul 2026 – Sep 2026</p>
+            <h3>Software Engineering Intern · Primare</h3>
+            <p class="timeline-org">San Diego, United States</p>
+            <ul>
+              <li>Joined as the founding engineering hire, laying the technical foundation for Primare OS before being promoted to CTO.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-date">Feb 2026 – Jun 2026</p>
+            <h3>Software Engineering Intern · WeInvest</h3>
+            <p class="timeline-org">Remote, Singapore</p>
+            <ul>
+              <li>Built a Python financial research platform orchestrating 44,000+ backtests across 78 signal-asset combinations through a nightly ETL pipeline scheduled with cron.</li>
+              <li>Reduced model discovery time from 3 days to 6 hours by engineering an 8-phase statistical validation pipeline with hypothesis testing and adaptive sampling, enforced through automated integration tests.</li>
+              <li>Built an LLM-driven autoresearch loop that generates search boundaries to maximize the Sharpe ratio across automated backtest experiments, with run logs recording the model version for every run.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-date">Feb 2025 – Jun 2025</p>
+            <h3>AI Research Intern · Q-Lab</h3>
+            <p class="timeline-org">San Diego, United States</p>
+            <ul>
+              <li>Built a scalable multi-agent simulation system supporting 100+ concurrent interactions by integrating neural networks with Unreal Engine 3D visualization environments, and designing software components for distributed and parallel simulation workloads.</li>
+              <li>Automated large-scale environment generation by integrating UnrealCV with Shap-E to generate 3D assets and environments, developing 200+ validated social-interaction animations and reducing manual setup.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-date">Oct 2024 – Aug 2026</p>
+            <h3>AI/ML Engineering Intern · Knight Lab</h3>
+            <p class="timeline-org">San Diego, United States</p>
+            <ul>
+              <li>Shipped an open source full-stack web application using agile methodologies, delivering NLP search, metadata exploration, and collaborative workflows used by 15+ researchers across 600+ studies.</li>
+              <li>Cut study discovery time from 15 minutes to 3 minutes by writing multi-table SQL joins and granular sample-metadata queries over a large dataset, optimizing PostgreSQL queries, lazy-loading large tables, and caching repeated lookups.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-date">Apr 2024 – Dec 2024</p>
+            <h3>Orientation Leader · UC San Diego</h3>
+            <p class="timeline-org">San Diego, United States</p>
+            <ul>
+              <li>Guided 60+ incoming freshmen through their transition to college life, facilitating group activities and providing academic and logistical support.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-date">Jun 2023 – Aug 2023</p>
+            <h3>Data Analyst Intern · Consat Orahi</h3>
+            <p class="timeline-org">Gurgaon, India</p>
+            <ul>
+              <li>Built backend data pipelines in Python (Pandas) and SQL to process thousands of access card records for 50+ employees.</li>
+              <li>Built an interactive Tableau dashboard visualizing attendance trends across 3 fiscal quarters.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-date">Jun 2022 – Sep 2022</p>
+            <h3>Data Analyst Intern · G-Square Solutions</h3>
+            <p class="timeline-org">Mumbai, India</p>
+            <ul>
+              <li>Designed a machine learning pipeline using scikit-learn to predict property buyer interest across major Indian real estate markets, achieving 94.5% classification accuracy with Gradient Boosting and Random Forest.</li>
+              <li>Engineered and cleaned a training dataset of 700,000+ customer-broker interactions using Pandas and Seaborn.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="section-head">
+        <p class="eyebrow"><span class="dot"></span>Leadership</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <p class="timeline-date">Jun 2025 – Present</p>
+          <h3>President &amp; Project Lead · CSES Innovate</h3>
+          <p class="timeline-org">San Diego, United States</p>
+          <ul>
+            <li>Lead a 40+ member student research organization focused on applied AI and machine learning projects with real-world social impact, overseeing project incubation, cross-disciplinary collaboration, and event organization.</li>
+            <li>Spearheading a medical AI initiative — reducing skin lesion misclassification by 35% and achieving 92% accuracy — by leading a 9-member team through Agile development to build an end-to-end app using PyTorch transfer learning.</li>
+            <li>Organized faculty panels and large-scale events connecting students with academic researchers and industry mentors.</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">May 2025 – Jun 2025</p>
+          <h3>VP of Operations · CSES Innovate</h3>
+          <p class="timeline-org">San Diego, United States</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">Nov 2024 – May 2025</p>
+          <h3>ML Researcher · CSES Innovate</h3>
+          <p class="timeline-org">San Diego, United States</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-soft">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow"><span class="dot"></span>Research &amp; Publications</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <p class="timeline-date">NeurIPS 2025 · Spotlight</p>
+            <h3><a href="https://simworld.org/" target="_blank" rel="noopener" style="color: inherit; text-decoration: none">SimWorld: An Open-ended Simulator for Agents in Physical and Social Worlds</a></h3>
+            <p class="timeline-org">Q-Lab, UC San Diego</p>
+            <p style="color: var(--ink-2); max-width: 65ch">
+              A large-scale simulation framework for training embodied agents in physically and socially realistic environments. Integrates
+              VLMs and LLMs for dynamic world building, supports 100+ real-time multi-agent interactions, and uses Unreal Engine 5 for
+              high-fidelity rendering.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-date">Manuscript in preparation</p>
+            <h3>Windowed Principal Coordinate Analysis</h3>
+            <p class="timeline-org">Knight Lab, UC San Diego</p>
+            <p style="color: var(--ink-2); max-width: 65ch">
+              First author. A dimensionality-reduction algorithm for biological datasets, implementing a streaming, out-of-core version in C++
+              that moves data between disk and RAM with mmap, with a multi-GPU implementation verified by unit tests — achieving
+              machine-precision convergence at 6× lower peak RAM than the industry standard.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="section-head">
+        <p class="eyebrow"><span class="dot"></span>Skills &amp; Interests</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <span class="tag">Python</span><span class="tag">C/C++</span><span class="tag">CUDA</span><span class="tag">Bash</span><span class="tag">SQL</span
+          ><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">Dart</span>
+        </div>
+        <div class="skill-group">
+          <h4>Frameworks &amp; Tools</h4>
+          <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">FastAPI</span><span class="tag">PyTorch</span
+          ><span class="tag">PostgreSQL / pgvector</span><span class="tag">LangChain</span><span class="tag">MCP</span><span class="tag">Flutter</span
+          ><span class="tag">Firebase</span><span class="tag">Claude Code</span>
+        </div>
+        <div class="skill-group">
+          <h4>Cloud &amp; Infrastructure</h4>
+          <span class="tag">AWS</span><span class="tag">Google Cloud</span><span class="tag">Kubernetes</span><span class="tag">Docker</span
+          ><span class="tag">Ansible</span><span class="tag">GitLab CI</span><span class="tag">Prometheus</span><span class="tag">Git/GitHub</span
+          ><span class="tag">Unix/Linux</span>
+        </div>
+        <div class="skill-group">
+          <h4>Interests</h4>
+          <span class="tag">Chess</span><span class="tag">Running</span><span class="tag">Squash</span><span class="tag">Tennis</span
+          ><span class="tag">Violin</span><span class="tag">Cycling</span><span class="tag">Weightlifting</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>© 2026 Dhruv Sharma</span>
+        <span><a href="../index.html">About</a> · <a href="../projects/index.html">Projects</a> · <a href="mailto:dhruvviveksharma@gmail.com">Email</a></span>
+      </div>
+    </footer>
+
+    <script src="../assets/js/script.js?v=10"></script>
+  </body>
+</html>
