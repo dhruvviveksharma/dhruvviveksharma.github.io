@@ -345,6 +345,10 @@ p {
   padding-top: var(--sp-1);
 }
 
+.hero-text > .eyebrow:first-of-type {
+  margin-top: var(--sp-2);
+}
+
 @media (max-width: 760px) {
   .hero {
     min-height: 520px;
